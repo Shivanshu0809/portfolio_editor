@@ -1,0 +1,1149 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100;0,200;0,600;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: .8rem;
+   background-color: whitesmoke;
+   box-shadow: 0px 0px 5px rgb(198, 78, 78);
+
+}
+
+
+.navbar>.logo{
+    align-items: baseline;
+    display: flex;
+    gap: 10px;
+
+}
+.logo>span{
+    font-size: 1rem;
+    font-weight: 600;
+
+
+}
+.navprt2{
+    display: flex;
+    gap: 30px;
+}
+.navprt2>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    transition: all .2s ease-in-out;
+
+}
+
+.navprt2>a:hover{
+
+    color: whitesmoke;
+    background-color: #323030;
+}
+.hamburger{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 0 auto;
+    align-items: center;
+    margin-left: 5%;
+    background-color:whitesmoke;
+    padding-left: 2rem;
+    border-radius: 10px;
+    border: 3px solid black;
+    border-top-color: rgb(211, 23, 23) ;
+    border-right-color: #a5a2a2;
+    border-bottom-color: rgba(240, 18, 162, 0.699);
+    border-left-color: #000;
+    animation: colorRibbon 5s infinite;
+    animation-timing-function:linear;
+   
+}
+
+@keyframes colorRibbon{
+    0%{
+        border-top-color: rgb(211, 23, 23) ;
+         border-right-color: #a5a2a2;
+        border-bottom-color: rgba(240, 18, 162, 0.699);
+        border-left-color: #000;
+    }
+    25%{
+        border-top-color: rgb(0, 0, 0) ;
+    border-left-color:  rgba(240, 18, 162, 0.699);
+    border-bottom-color: #a5a2a2;
+    border-right-color: rgb(211, 23, 23);
+    }
+    50%{
+        border-bottom-color: rgb(211, 23, 23) ;
+        border-left-color: #a5a2a2;
+       border-top-color: rgba(240, 18, 162, 0.699);
+       border-right-color: #000;
+    }
+    75%{
+        border-left-color: rgb(211, 23, 23) ;
+        border-top-color: #a5a2a2;
+       border-right-color: rgba(240, 18, 162, 0.699);
+       border-bottom-color: #000;
+    }
+    100%{
+        border-top-color: rgb(211, 23, 23) ;
+         border-right-color: #a5a2a2;
+        border-bottom-color: rgba(240, 18, 162, 0.699);
+        border-left-color: #000;
+    }
+
+}
+.herolft{
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.herolft>h1{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.introprt{
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgba(16, 16, 16, 0.815);
+}
+.introprt>span{
+    color: rgba(255, 0, 64, 0.792);
+}
+.introprt>p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hire>a button{
+    padding: .5rem;  
+    width: 8vw;
+    font-weight: 500;
+    font-size: 1rem;  
+    border-radius: 5px;
+    border: 1px solid rgb(8, 54, 78);
+    background-color: rgba(180, 28, 28, 0.822);
+    color: #fff;
+    cursor: pointer;
+}
+.hire>a button:hover{
+    scale: .97;
+}
+/* hr{
+    width: 90vw;
+    margin: 0 auto;
+    
+} */
+
+.skillSection{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    
+    
+}
+.skillSection>h1{
+    font-size: 8rem;
+    color: #989494;
+    user-select: none;
+}
+.skillsMentions{
+    display: flex;
+    justify-content: space-around;   
+    margin: 0 auto;
+    margin-top: 8%;
+    padding-bottom: 10%;
+   
+    align-items: center;
+    position: relative;
+    
+}
+
+.skillRyt{
+    width: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ellipse1{
+    position: absolute;
+    top: -52%;
+    right: 0%;
+    filter:brightness(70%);
+
+}
+.ellipse2{
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    filter:brightness(70%);
+    z-index: 1;
+}
+
+.skillRyt>img,.skillLogo>img{
+    width: 5vw;
+    height: 12vh;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+    z-index: 100;
+
+    
+}
+.skillRyt>img:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 10px 5px rgb(0, 183, 255);
+}
+.skillLogo{
+    position: relative;
+    z-index: 100;
+}
+.skillLogo>span{
+    position: absolute;
+    top: 0%;
+    left: 8%;
+    background: whitesmoke;
+    color: #000;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px  rgb(206, 214, 218);
+    z-index: -2;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+.skillLogo>img:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 5px  rgb(0, 183, 255);
+}
+.skillLogo:hover.skillLogo span{
+    top: -50%;
+     opacity: 1;
+
+}
+.snapseedLogo>span{
+    left: 0%;
+}
+.skillLogo:hover.snapseedLogo span{
+    top: -40%;
+     opacity: 1;
+}
+.vnLogo>span{
+    left: 28%;
+}
+.skillLogo:hover.vnLogo span{
+    top: -40%;
+     opacity: 1;
+}
+
+.skillLft>h2{
+    font-size: 3rem;
+    color: rgb(253, 98, 81);
+}
+.skillLft>p{
+    margin-top: 2rem;
+    line-height: 24px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: black;
+    padding: 2rem;
+    width: 30vw;
+    border-radius: 10px;
+    position: relative;
+    z-index: 50;
+    box-shadow: 0px 5px 22px 5px rgba(128, 0, 128, 0.692);
+}
+.skillLft>p span{
+    color: rgb(181, 11, 197);
+    font-weight: 600;
+}
+
+.projects{
+background: #000000;
+background: linear-gradient(135deg, #060606c2, #aa14c5ab);
+ position: relative;
+
+
+ /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=302f2d&c2=4c240c&gt=l&gd=dtl
+*/
+background: #302F2D;
+background: linear-gradient(135deg, #302F2D, #4C240C);
+}
+.projects>h1{
+    font-size: 5rem;
+    color:#a5a2a2;
+   
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+.phone>img{
+ width: 37vw;
+ z-index: 200;
+ user-select: none;
+}
+.videoEdit{
+    position: absolute;
+    top: 22%;
+    left: 46.5%;
+    z-index: 1;
+   
+}
+.videoEdit>video{
+    width: 15.2vw;
+   
+}
+.projects>.text>h1{
+    position:absolute;
+    top: 30%;
+    font-size: 12rem;
+    margin-left: 12%;
+    word-spacing: 14rem;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.611);
+}
+
+
+.PhotoEdit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+background: #F1E17D;
+background: linear-gradient(135deg, #F1E17D, #330640);
+position: relative;
+/* margin-bottom: 10%; */
+height: 100vh;
+z-index: 2;
+border: none;
+}
+#EditImg>img{
+    width: 25vw;
+    height: 90vh;
+    border-radius: 20px;
+    z-index: 100;
+    position: relative;
+    background-color: #000;
+    box-shadow: 0px 0px 50px rgba(151, 7, 115, 0.393);
+    border: none;
+}
+
+.PhotoEdit>.text>h1{
+    position:absolute;
+    top: 30%;
+    font-size: 12rem;
+    margin-left: -55%;
+    word-spacing: 10rem;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.611);
+    z-index: 2;
+}
+
+
+.socialConnectSec{
+    background-color: #311d1d;
+    /* margin-top: 10%; */
+    padding-top: 5rem;
+    background-image: url(./images/skPhotography.jpg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  padding-bottom: 1rem;
+
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -120%;
+    gap: 40px;
+   border-left-color: 2px solid #4C240C;
+    border: 1px solid black;
+    width: 70vw;
+    margin: 0 auto;
+border-radius: 1px;
+border-top-left-radius:50%;
+border-bottom-right-radius: 50%;
+   background-color: rgba(3, 18, 28, 0.982);
+   /* z-index: 200; */
+    padding: 2rem;
+
+    box-shadow: 0px 0px 10px black;
+
+}
+.social>h1{
+    font-size: 4rem;
+    color: #817f7f;
+}
+.socialLogo{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    
+}
+.socialLogo>a{
+    /* box-shadow: 0px 2px 10px black;
+    border-radius: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-decoration: none;
+}
+.socialLogo>a>.value{
+    font-size: 3rem;
+    color: #ec0b0b;
+    font-weight: 600;
+  
+    
+}
+.socialLogo>a>.value2{
+    color: rgb(224, 20, 204);
+}
+.socialLogo>a>.ytlogo{
+    -webkit-filter: drop-shadow(0px  0px 20px  rgb(255, 2, 2));
+    animation: shadow 1s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes shadow{
+    0%{
+        -webkit-filter: drop-shadow(0px  0px 20px  rgb(255, 2, 2));
+    }
+    20%{
+        -webkit-filter: drop-shadow(0px  0px 15px  rgb(255, 2, 2));
+    }
+    40%{
+        -webkit-filter: drop-shadow(0px  0px 10px  rgb(255, 2, 2));
+    }
+    60%{
+        -webkit-filter: drop-shadow(0px  0px 8px  rgb(255, 2, 2));
+    }
+    80%{
+        -webkit-filter: drop-shadow(0px  0px 6px  rgb(255, 2, 2));
+    }
+    100%{
+        -webkit-filter: drop-shadow(0px  0px 2px  rgb(255, 2, 2));
+    }
+}
+.socialLogo>a>.instalogo{
+    -webkit-filter: drop-shadow(0px  0px 20px  rgb(255, 2, 166));
+    animation: shadow2 1s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes shadow2{
+    0%{
+        -webkit-filter: drop-shadow(0px  0px 20px  rgb(255, 2, 166));
+    }
+    20%{
+        -webkit-filter: drop-shadow(0px  0px 15px  rgb(255, 2, 166));
+    }
+    40%{
+        -webkit-filter: drop-shadow(0px  0px 10px  rgb(255, 2, 166));
+    }
+    60%{
+        -webkit-filter: drop-shadow(0px  0px 8px  rgb(255, 2, 166));
+    }
+    80%{
+        -webkit-filter: drop-shadow(0px  0px 6px  rgb(255, 2, 166));
+    }
+    100%{
+        -webkit-filter: drop-shadow(0px  0px 2px  rgb(255, 2, 166));
+    }
+}
+.socialLogo>a>img{
+    width: 8vw;
+    /* box-shadow: 0px 0px 10px 5px rgb(0, 183, 255); */
+
+    
+-moz-filter: drop-shadow(0px 16px 10px rgba(0,0,225,0.6));
+-ms-filter: drop-shadow(0px 16px 10px rgba(0,0,225,0.6)); 
+-o-filter: drop-shadow(0px 16px 10px rgba(0,0,225,0.6));
+ filter: drop-shadow(0px 0px 16px 10px rgba(238, 7, 7, 0.6)); 
+    
+    
+  
+}
+.collab{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.collab>a>button{
+    width: 10vw;
+    padding: .9rem 0rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #F1E17D;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.collab>i{
+    font-size: 2rem;
+    color: whitesmoke;
+    animation: arrow 1s infinite;
+    animation-timing-function: linear;
+}
+@keyframes arrow{
+    0%{
+
+    }
+    50%{
+        margin-left: 8%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+    background-color: #2f2e2e;
+    color: #fff;
+    gap: 50px;
+    
+    
+}
+.footerPrt{
+    display: flex;
+    justify-content: space-around;
+}
+.footerPrt>div>a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 1.2rem;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.contact>a:hover{
+    color: rgb(0, 221, 255);
+}
+.shortcutSection{
+    display: flex;
+    gap: 30px;
+    
+}
+.shortcutSection>a{
+    transition: all .2s ease-in-out;
+}
+.shortcutSection>a:hover{
+    color: rgb(0, 221, 255);
+    margin-top: -5%;
+
+}
+.socialmediaLogo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+    justify-content: center;
+}
+.socialmediaLogo>a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.socialmediaLogo>a>.fa-instagram{
+    color: pink;
+}
+.socialmediaLogo>a>.fa-instagram:hover{
+    color: rgb(211, 15, 155);
+}
+.socialmediaLogo>a>.fa-youtube{
+    color: rgb(250, 183, 183);
+}
+.socialmediaLogo>a>.fa-youtube:hover{
+    color: rgb(237, 13, 13);
+}
+footer>p{
+    text-align: center;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+@media(max-width:430px){
+    
+    #MobileMenubar{
+        background-color: #1b1c1cd6;
+        height: 0vh;
+        filter: blur(5px);
+        width: 100vw;
+        position: fixed;
+        z-index: 200;
+        transition: all .2s ease-in-out;
+        top: 0;
+    }
+    .menu{
+    
+        z-index: 500;
+        position: fixed;
+        display: none;
+    }
+
+    .menu>.ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        width: 100vw;
+        padding-top: 4rem;
+        /* display: none; */
+     transition: all 2s ease-in-out;
+        list-style-type: none;
+        opacity: 0;
+
+    
+    }
+    .menu>ul>li{
+        align-items: center;
+
+       
+       
+    }
+    .menu>ul>li>a{
+        color: whitesmoke;
+        font-size: 1.1rem;
+        text-decoration: none;
+       
+    }
+    .menu>ul>li>a:hover{
+        color: rgb(15, 136, 184);
+
+    }
+    .navbar{
+        width: 100%;
+        padding: .5rem 1rem;
+        position: fixed;
+        top: 0;
+        z-index: 500;
+      
+    }
+    .navbar>.logo>img{
+        width: 8vw;
+    }
+    .navprt2{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size: 1.3rem;
+    }
+    .hero{
+        
+        width: 100%;
+        height: 91vh;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding: 1rem 0rem;
+        text-align: center;
+        align-items: center;
+        margin-top: 13%;
+
+    }
+   
+    .heroryt>img{
+       border-radius: 50%;
+       border:1px solid rgb(0, 0, 0);
+       width: 55vw;
+       height: 37vh;
+    }
+    .herolft{
+        display: flex;
+        flex-direction: column;
+    }
+    .herolft>h1{
+        font-weight: 500;
+        font-size: 2.3rem;
+        margin-bottom: 0%;
+        margin-top: 0;
+    }
+    .introprt{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: rgba(16, 16, 16, 0.815);
+        
+    }
+    .hire>a button{
+        width: 50%;
+        
+    }
+    .skillSection>h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .skillsMentions{
+        width: 100%;
+        flex-direction: column;
+      
+    }
+    .skillLft>p{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
+    
+    }
+    .skillLogo>span{
+        left: 0%;
+    }
+    .skillLft>h2{
+        font-size: 2.5rem;
+        text-align: center;
+
+    }
+    .skillRyt{
+        width: 90%;
+        flex-wrap: wrap;
+        margin-top: 15%;
+        align-items: center;
+        margin-left: -5%;
+        padding-left: 0;
+
+    }
+    .ellipse1{
+        position: absolute;
+        top: -20%;
+        right: 0%;
+        filter:brightness(70%);
+        width: 50vw;
+    
+    }
+    .ellipse2{
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        filter:brightness(70%);
+        z-index: 1;
+        width: 50vw;
+    }
+    .skillRyt>img,.skillLogo>img{
+        width: 90%;
+        height: 10vh;
+        transition: all .2s ease-in-out;
+        border-radius: 50%;
+        z-index: 100;
+        align-items: center;
+        
+    
+        
+    }
+    .projects{
+        height: 90vh;
+        width: 100%;
+        padding-top: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .projects>h1{
+        text-align: center;
+        font-size: 3.1rem;
+        
+    }
+    .projects>.text>h1{
+        position:absolute;
+        top: 20%;
+        font-size: 3.2rem;
+        margin-left: 8%;
+        word-spacing: 4rem;
+        user-select: none;
+        color: rgba(0, 0, 0, 0.611);
+    }
+    .phone>img{
+        width: 90%;
+        z-index: 100;
+        user-select: none;
+        margin-left: -8%;
+       margin-top: 22%;
+       }
+       .videoEdit{
+           position: absolute;
+           top: 32%;
+           left: 35.5%;
+           z-index: 1;
+          
+       }
+       .videoEdit>video{
+           width:60%;
+          
+       }
+       #EditImg{
+        background-color: #cd070728;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+        
+       }
+       #EditImg>img{
+        width: 90%;
+        height: 90%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+   
+       
+    }
+    .PhotoEdit{
+        flex-direction: column;
+        height: 80vh;   
+    }
+    
+    .PhotoEdit>.text>h1{
+        position:absolute;
+        top: 8%;
+        left: 5%;
+        font-size: 4rem;
+        margin-left: 0;
+        word-spacing: 1rem;
+        user-select: none;
+        color: rgba(0, 0, 0, 0.611);
+        z-index: 2;
+      
+    }
+    .socialConnectSec{
+        background-position: center;
+        background-size: contain;
+    }
+    .social{
+        width: 100%;
+    }
+    .social>h1{
+        font-size: 2.5rem;
+    }
+    .socialLogo{
+        gap: 100px;
+    }
+    .socialLogo>a>img{
+        width: 15vw;
+    }
+    .socialLogo>a .value{
+        font-size: 2rem;
+    }
+    .collab{
+        display: flex;
+        width: 50%;
+    }
+    .collab>a>button{
+        width: 40vw;
+        padding: .5rem;
+    }
+    .collab>i{
+        font-size: 1.5rem;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        padding: 1rem .5rem;
+    }
+    .footerPrt{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 25px;
+    }
+    .contact{
+        align-items: center;
+        gap: 10px;
+    }
+    .footerPrt>.contact>a{
+        font-size: 1.1rem;
+    }
+    .shortcutSection{
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    .footerPrt>.shortcutSection>a{
+        /* transition: none; */
+        font-size: 1.1rem
+    }
+    .shortcutSection>a:hover{
+        color: rgb(0, 221, 255);
+        margin-top: 0%;
+    
+    }
+
+}
+
+@media(max-width:380px){
+    .herolft>h1{
+        font-size: 2.2rem;
+        
+    }
+    .introprt>p{
+        font-size: 1.1rem;
+    }
+    .hire{
+        width: 80vw;
+    }
+    .skillSection>h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .skillsMentions{
+        width: 100%;
+        flex-direction: column;
+      
+    }
+    .skillLft>p{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
+        padding: 1rem;
+        font-size: 1.1rem;
+    
+    }
+    .skillLft>h2{
+        font-size: 2rem;
+    }
+    .projects{
+        height: 78vh;
+        width: 100%;
+        padding-top: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .projects>h1{
+        font-size: 2.2rem;
+    }
+    .projects>.text>h1{
+        font-size: 2.6rem;
+        left: 5%;
+        top: 22%;
+    }
+    .PhotoEdit>.text>h1{
+        position:absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 3rem;
+        margin-left: 0;
+        word-spacing: 1rem;
+        user-select: none;
+        color: rgba(0, 0, 0, 0.611);
+        z-index: 2;
+      
+    }
+    .social>h1{
+        font-size: 2.1rem;
+    }
+    .socialLogo{
+        gap: 80px;
+    }
+    .socialLogo>a>img{
+        width: 18vw;
+    }
+    .collab>a>button{
+        width: 40vw;
+        padding: .5rem;
+    }
+    footer{
+        padding-top: 1.5rem;
+        gap: 10px;
+    }
+   
+    .socialmediaLogo{
+        margin-top: 5%;
+   
+    }
+    .ellipse1{
+        position: absolute;
+        top: -20%;
+        right: 0%;
+        filter:brightness(70%);
+        width: 50vw;
+        display: none;
+    
+    }
+    
+}
+@media(max-width:322px){
+   
+    .heroryt>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width: 58vw;
+        height: 32vh;
+        margin-top: 25%;
+       
+       
+     }
+     .herolft>h1{
+        font-size: 2rem;
+        
+    }
+    .introprt{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgba(16, 16, 16, 0.815);
+        
+    }
+    .introprt>p{
+        font-size: 1rem;
+    }
+    .skillSection>h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .skillLft>h2{
+        font-size: 1.5rem;
+    }
+    .skillLft>p{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
+        padding: .8rem;
+        font-size: 1rem;
+        /* line-height: 25px; */
+    
+    }
+    .skillLogo>img{
+        width: 10vw;
+        height: 5vh;
+    }
+    .skillLogo>span{
+        font-size: .7rem;
+        padding: .1rem .3rem;
+        left: -15%;
+        
+    }
+    .skillLogo:hover.skillLogo span{
+        top: -80%;
+         opacity: 1;
+    
+    }
+    .projects{
+        height: 72vh;
+    }
+    .projects>h1{
+        font-size: 2rem;
+    }
+    .projects>.text>h1{
+        font-size: 2rem;
+        left: 5%;
+        top: 22%;
+    }
+    .PhotoEdit>.text>h1{
+        position:absolute;
+        top: 10%;
+        left: 15%;
+        font-size: 2rem;
+        margin-left: 0;
+        word-spacing: 1rem;
+        user-select: none;
+        color: rgba(0, 0, 0, 0.611);
+        z-index: 2;
+      
+    }
+    .phone>img{
+        width: 100%;
+        z-index: 100;
+        user-select: none;
+        margin-left: -8%;
+       margin-top: 22%;
+       }
+
+       .videoEdit>video{
+           width:63%;
+          
+       }
+       #EditImg{
+        background-color: #cd070728;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 80vw;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+       }
+       .social{
+        gap: 20px;
+       }
+    .social>h1{
+        font-size: 1.5rem;
+    }
+    .socialLogo{
+        gap: 80px;
+    }
+    .socialLogo>a>img{
+        width: 15vw;
+    }
+    .socialLogo>a>.value{
+        font-size: 1.5rem;
+    }
+    .collab>a>button{
+        width: 40vw;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    footer{
+        padding:1rem 1rem;
+        gap: 10px;
+    }
+    .footerPrt>.contact>a{
+        font-size: 1rem;
+    }
+    .footerPrt>.shortcutSection>a{
+        font-size: 1rem;
+    }
+   
+    .socialmediaLogo{
+        margin-top: 5%;
+   
+    }
+    footer>.socialmediaLogo>a{
+        font-size: 1.7rem;
+    }
+    footer>p{
+        font-size: .8rem;
+
+    }
+
+}
