@@ -286,7 +286,7 @@
 }
 
 .projects{
-background: #000000;
+
 background: linear-gradient(135deg, #060606c2, #aa14c5ab);
  position: relative;
 
@@ -679,6 +679,7 @@ footer>p{
         text-align: center;
         align-items: center;
         margin-top: 13%;
+        justify-content: center;
 
     }
    
@@ -709,7 +710,7 @@ footer>p{
         
     }
     .skillSection>h1{
-        font-size: 5rem;
+        font-size: 3rem;
         text-align: center;
     }
     .skillsMentions{
@@ -721,13 +722,20 @@ footer>p{
         width: 90%;
         margin: 0 auto;
         margin-top: 2%;
+        padding: 1rem;
+        font-size: 1rem;
     
+    }
+    .skillLft>p br{
+        display: none;
     }
     .skillLogo>span{
         left: 0%;
+        font-size: .5rem;
+        padding: .2rem;
     }
     .skillLft>h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
 
     }
@@ -741,11 +749,7 @@ footer>p{
 
     }
     .ellipse1{
-        position: absolute;
-        top: -20%;
-        right: 0%;
-        filter:brightness(70%);
-        width: 50vw;
+       display: none;
     
     }
     .ellipse2{
@@ -757,8 +761,8 @@ footer>p{
         width: 50vw;
     }
     .skillRyt>img,.skillLogo>img{
-        width: 90%;
-        height: 10vh;
+        width: 80%;
+        height: 8vh;
         transition: all .2s ease-in-out;
         border-radius: 50%;
         z-index: 100;
@@ -776,13 +780,13 @@ footer>p{
     }
     .projects>h1{
         text-align: center;
-        font-size: 3.1rem;
-        
+        font-size: 2.1rem;
     }
+
     .projects>.text>h1{
         position:absolute;
         top: 20%;
-        font-size: 3.2rem;
+        font-size: 3rem;
         margin-left: 8%;
         word-spacing: 4rem;
         user-select: none;
@@ -790,10 +794,12 @@ footer>p{
     }
     .phone>img{
         width: 90%;
-        z-index: 100;
+        /* z-index: 100; */
         user-select: none;
         margin-left: -8%;
-       margin-top: 22%;
+       margin-top: 26.4%;
+       position: relative;
+       z-index: 5;
        }
        .videoEdit{
            position: absolute;
@@ -816,6 +822,7 @@ footer>p{
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+        z-index: 8;
         
        }
        #EditImg>img{
@@ -836,8 +843,8 @@ footer>p{
     .PhotoEdit>.text>h1{
         position:absolute;
         top: 8%;
-        left: 5%;
-        font-size: 4rem;
+        left: 15%;
+        font-size: 3rem;
         margin-left: 0;
         word-spacing: 1rem;
         user-select: none;
@@ -853,7 +860,7 @@ footer>p{
         width: 100%;
     }
     .social>h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .socialLogo{
         gap: 100px;
@@ -869,8 +876,9 @@ footer>p{
         width: 50%;
     }
     .collab>a>button{
-        width: 40vw;
+        width: 35vw;
         padding: .5rem;
+        font-size: 1rem;
     }
     .collab>i{
         font-size: 1.5rem;
@@ -923,7 +931,7 @@ footer>p{
         width: 80vw;
     }
     .skillSection>h1{
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
     }
     .skillsMentions{
@@ -936,26 +944,81 @@ footer>p{
         margin: 0 auto;
         margin-top: 2%;
         padding: 1rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     
     }
     .skillLft>h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .projects{
-        height: 78vh;
+        height: 100vh;
         width: 100%;
         padding-top: 1rem;
         padding-left: .5rem;
         padding-right: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: rgb(191, 224, 225);
+       
     }
     .projects>h1{
-        font-size: 2.2rem;
+        font-size: 1.5rem;
+        /* display: none; */
+        
     }
     .projects>.text>h1{
-        font-size: 2.6rem;
-        left: 5%;
+        font-size: 2.1rem;
+        left: 10%;
         top: 22%;
+        display: none;
+    }
+    .phone>img{
+        width: 100%;
+        /* z-index: 100; */
+        user-select: none;
+        margin-left: -8%;
+       margin-top: 26.4%;
+       position: relative;
+       z-index: 2;
+       display: none;
+       }
+       .videoEdit{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        z-index: 1;
+       
+        
+       
+    }
+    .videoEdit>video{
+        width:100vw;
+        height: 80vh;
+        /* display: none; */
+        border-style: dotted;
+        border-color: #05675d;
+        box-shadow: 0px 0px 10px black;
+       border-top-left-radius: 50px;
+       border-bottom-right-radius: 50px;
+    
+       
+       
+    }
+    .reelFrame{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100vw;
+        margin: 0 auto;
+        /* height: 100vh; */
+    
+
+    }
+    .reelFrame>img{
+        width: 70vw;
+        height: 80vh;
+        margin-left: 0%;
     }
     .PhotoEdit>.text>h1{
         position:absolute;
@@ -1009,7 +1072,7 @@ footer>p{
         border:1px solid rgb(0, 0, 0);
         width: 58vw;
         height: 32vh;
-        margin-top: 25%;
+        /* margin-top: 25%; */
        
        
      }
@@ -1058,7 +1121,7 @@ footer>p{
     
     }
     .projects{
-        height: 72vh;
+        height: 95vh;
     }
     .projects>h1{
         font-size: 2rem;
@@ -1086,10 +1149,11 @@ footer>p{
         user-select: none;
         margin-left: -8%;
        margin-top: 22%;
+       display: none;
        }
 
        .videoEdit>video{
-           width:63%;
+           width:100vw;
           
        }
        #EditImg{
