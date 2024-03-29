@@ -602,6 +602,994 @@ footer>p{
     font-size: 1rem;
     color: whitesmoke;
 }
+@media(max-width:1024px){
+    
+    /* #MobileMenubar{
+        background-color: #1b1c1cd6;
+        height: 0vh;
+        filter: blur(5px);
+        width: 100vw;
+        position: fixed;
+        z-index: 200;
+        transition: all .2s ease-in-out;
+        top: 0;
+    } */
+    .navbar{
+        width: 100%;
+        padding: .5rem 1rem;
+        position: fixed;
+        top: 0;
+        z-index: 500;
+      
+    }
+    .navbar>.logo>img{
+        width: 5vw;
+    }
+    .navprt2{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+        font-size: 1.3rem;
+    }
+    .menu{
+    
+        z-index: 500;
+        position: fixed;
+        display: none;
+    }
+
+   
+    .menu>ul>li{
+        align-items: center;
+
+       
+       
+    }
+    .menu>ul>li>a{
+        color: whitesmoke;
+        font-size: 1.1rem;
+        text-decoration: none;
+       
+    }
+    .menu>ul>li>a:hover{
+        color: rgb(15, 136, 184);
+
+    }
+    .hero{
+        
+        width: 100%;
+        height: 95vh;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding: 1rem 0rem;
+        text-align: center;
+        align-items: center;
+        margin-top: 7%;
+        justify-content: center;
+
+    }
+    .heroryt>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width: 40vw;
+        height: 45vh;
+     }
+     .herolft{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+     .herolft>h1{
+         font-weight: 500;
+         font-size: 2.5rem;
+         margin-bottom: 0%;
+         margin-top: 0;
+     }
+     .introprt{
+         font-size: 2rem;
+         font-weight: 600;
+         color: rgba(16, 16, 16, 0.815);
+         
+     }
+     .hire>a button{
+         width: 50%;
+         font-size: 1.5rem;
+         
+     }
+     .skillSection>h1{
+         font-size: 4rem;
+         text-align: center;
+     }
+     .skillsMentions{
+         width: 100%;
+         flex-direction: column;
+       
+     }
+     .skillLft>p{
+         width: 50%;
+         margin: 0 auto;
+         margin-top: 2%;
+         padding: 1.5rem;
+         font-size: 1.2rem;
+     
+     }
+     .skillLft>p br{
+         display: none;
+     }
+     .skillLogo>span{
+         left: 0%;
+         font-size: 1.2rem;
+         padding: .3rem;
+       
+     }
+     .skillLft>h2{
+         font-size: 2.8rem;
+         text-align: center;
+ 
+     }
+     .skillRyt{
+         width: 90%;
+         flex-wrap: wrap;
+         margin-top: 15%;
+         align-items: center;
+         margin-left: -5%;
+         padding-left: 0;
+ 
+     }
+     .ellipse1{
+        display: none;
+     
+     }
+     .ellipse2{
+         position: absolute;
+         left: 0;
+         bottom: 0%;
+         filter:brightness(70%);
+         z-index: 1;
+         width: 50vw;
+     }
+     .skillRyt>img,.skillLogo>img{
+         width: 80%;
+         height: 8vh;
+         transition: all .2s ease-in-out;
+         border-radius: 50%;
+         z-index: 100;
+         align-items: center;
+         
+     
+         
+     }
+     .projects{
+         height: 100vh;
+         width: 100%;
+         padding-top: 1rem;
+         padding-left: .5rem;
+         padding-right: .5rem;
+         gap: 15px;
+         background: rgb(191, 224, 225);
+        margin: 0 auto;
+     }
+     .projects>h1{
+         text-align: center;
+         font-size: 2.5rem;
+     }
+ 
+     .projects>.text>h1{
+         display: none;
+     }
+     .phone>img{
+        display: none;
+        }
+        .videoEdit{
+            position: absolute;
+            top: 10%;
+             left: 10%;
+            z-index: 1;
+        
+        }
+        .videoEdit>video{
+     
+             width:80vw;
+            height: 80vh;
+            /* display: none; */
+            border-style: dotted;
+            border-color: #05675d;
+            box-shadow: 0px 0px 10px black;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        
+            
+            
+         }
+         .PhotoEdit>#EditImg{
+             background-color: #cd070728;
+             align-items: center;
+             display: flex;
+             justify-content: center;
+             height: 100%;
+             width: 45vw;
+             border-top-left-radius: 30px;
+             border-top-right-radius: 30px;
+             box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+             }
+        /* #EditImg{
+             background-color: #cd070728;
+             align-items: center;
+             display: flex;
+             justify-content: center;
+             height: 100%;
+             width: 100%;
+             border-top-left-radius: 30px;
+             border-top-right-radius: 30px;
+             box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+             z-index: 8;
+             
+            } */
+            #EditImg>img{
+             width: 90%;
+             height: 90%;
+             border-top-left-radius: 20px;
+             border-top-right-radius: 20px;
+             border-bottom-left-radius: 0;
+             border-bottom-right-radius: 0;
+        
+            
+         }
+         .PhotoEdit{
+             flex-direction: column;
+             height: 95vh;   
+         }
+         
+         .PhotoEdit>.text>h1{
+             position:absolute;
+             top: 5%;
+             left: 10%;
+             font-size: 9rem;
+             margin-left: 0;
+             word-spacing: 0rem;
+             user-select: none;
+             color: rgba(40, 38, 38, 0.611);
+             z-index: 2;
+             /* width: 100vw; */
+           
+         }
+         .socialConnectSec{
+             background-position: center;
+             background-size: contain;
+         }
+         .social{
+             width: 100%;
+         }
+         .social>h1{
+             font-size: 2.8rem;
+         }
+         .socialLogo{
+             gap: 100px;
+         }
+         .socialLogo>a>img{
+             width: 15vw;
+         }
+         .socialLogo>a .value{
+             font-size: 2rem;
+         }
+         .collab{
+             display: flex;
+             width: 35%;
+            /* align-items:center ; */
+
+         }
+         .collab>a>button{
+             width: 30vw;
+             padding: .5rem;
+             font-size: 1.5rem;
+         }
+         .collab>i{
+             font-size: 1.5rem;
+         }
+         footer{
+             width: 100%;
+             height: 100%;
+             gap: 20px;
+             padding: 1rem .8rem;
+         }
+         .footerPrt{
+             flex-wrap: wrap;
+             justify-content: space-around;
+             gap: 25px;
+         }
+         .contact{
+             /* align-items: center; */
+             gap: 10px;
+         }
+         .footerPrt>.contact>a{
+             font-size: 1.4rem;
+         }
+         .shortcutSection{
+             flex-wrap: wrap;
+             align-items: center;
+             gap: 20px;
+             justify-content: center;
+         }
+         .footerPrt>.shortcutSection>a{
+             /* transition: none; */
+             font-size: 1.4rem
+         }
+         .shortcutSection>a:hover{
+             color: rgb(0, 221, 255);
+             margin-top: 0%;
+         
+         }
+         footer>p{
+             font-size: 1rem;
+         }
+
+}
+@media(max-width:768px){
+    
+        #MobileMenubar{
+            background-color: #1b1c1cd6;
+            height: 0vh;
+            filter: blur(5px);
+            width: 100vw;
+            position: fixed;
+            z-index: 200;
+            transition: all .2s ease-in-out;
+            top: 0;
+        }
+        .navbar{
+            width: 100%;
+            padding: .5rem 1rem;
+            position: fixed;
+            top: 0;
+            z-index: 500;
+          
+        }
+        .navbar>.logo>img{
+            width: 5vw;
+        }
+        .navprt2{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+            font-size: 1.3rem;
+        }
+        .menu{
+        
+            z-index: 500;
+            position: fixed;
+            display: none;
+        }
+    
+        .menu>.ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            width: 100vw;
+            padding-top: 2rem;
+            /* display: none; */
+         transition: all 2s ease-in-out;
+            list-style-type: none;
+            opacity: 0;
+    
+        
+        }
+        .menu>ul>li{
+            align-items: center;
+    
+           
+           
+        }
+        .menu>ul>li>a{
+            color: whitesmoke;
+            font-size: 1.1rem;
+            text-decoration: none;
+           
+        }
+        .menu>ul>li>a:hover{
+            color: rgb(15, 136, 184);
+    
+        }
+        .hero{
+            
+            width: 100%;
+            height: 95vh;
+            flex-direction: column-reverse;
+            margin: 0 auto;
+            padding: 1rem 0rem;
+            text-align: center;
+            align-items: center;
+            margin-top: 7%;
+            justify-content: center;
+    
+        }
+        .heroryt>img{
+            border-radius: 50%;
+            border:1px solid rgb(0, 0, 0);
+            width: 40vw;
+            height: 45vh;
+         }
+         .herolft{
+             display: flex;
+             flex-direction: column;
+             width: 100%;
+         }
+         .herolft>h1{
+             font-weight: 500;
+             font-size: 2.5rem;
+             margin-bottom: 0%;
+             margin-top: 0;
+         }
+         .introprt{
+             font-size: 2rem;
+             font-weight: 600;
+             color: rgba(16, 16, 16, 0.815);
+             
+         }
+         .hire>a button{
+             width: 50%;
+             
+         }
+         .skillSection>h1{
+             font-size: 3rem;
+             text-align: center;
+         }
+         .skillsMentions{
+             width: 100%;
+             flex-direction: column;
+           
+         }
+         .skillLft>p{
+             width: 60%;
+             margin: 0 auto;
+             margin-top: 2%;
+             padding: 1rem;
+             font-size: 1.2rem;
+         
+         }
+         .skillLft>p br{
+             display: none;
+         }
+         .skillLogo>span{
+             left: 0%;
+             font-size: .8rem;
+             padding: .2rem;
+           
+         }
+         .skillLft>h2{
+             font-size: 2.2rem;
+             text-align: center;
+     
+         }
+         .skillRyt{
+             width: 90%;
+             flex-wrap: wrap;
+             margin-top: 15%;
+             align-items: center;
+             margin-left: -5%;
+             padding-left: 0;
+     
+         }
+         .ellipse1{
+            display: none;
+         
+         }
+         .ellipse2{
+             position: absolute;
+             left: 0;
+             bottom: 0%;
+             filter:brightness(70%);
+             z-index: 1;
+             width: 50vw;
+         }
+         .skillRyt>img,.skillLogo>img{
+             width: 80%;
+             height: 8vh;
+             transition: all .2s ease-in-out;
+             border-radius: 50%;
+             z-index: 100;
+             align-items: center;
+             
+         
+             
+         }
+         .projects{
+             height: 100vh;
+             width: 100%;
+             padding-top: 1rem;
+             padding-left: .5rem;
+             padding-right: .5rem;
+             gap: 15px;
+             background: rgb(191, 224, 225);
+            margin: 0 auto;
+         }
+         .projects>h1{
+             text-align: center;
+             font-size: 2.1rem;
+         }
+     
+         .projects>.text>h1{
+             display: none;
+         }
+         .phone>img{
+            display: none;
+            }
+            .videoEdit{
+                position: absolute;
+                top: 10%;
+                 left: 10%;
+                z-index: 1;
+            
+            }
+            .videoEdit>video{
+         
+                 width:80vw;
+                height: 80vh;
+                /* display: none; */
+                border-style: dotted;
+                border-color: #05675d;
+                box-shadow: 0px 0px 10px black;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            
+                
+                
+             }
+             .PhotoEdit>#EditImg{
+                 background-color: #cd070728;
+                 align-items: center;
+                 display: flex;
+                 justify-content: center;
+                 height: 100%;
+                 width: 50vw;
+                 border-top-left-radius: 30px;
+                 border-top-right-radius: 30px;
+                 box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+                 }
+            /* #EditImg{
+                 background-color: #cd070728;
+                 align-items: center;
+                 display: flex;
+                 justify-content: center;
+                 height: 100%;
+                 width: 100%;
+                 border-top-left-radius: 30px;
+                 border-top-right-radius: 30px;
+                 box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+                 z-index: 8;
+                 
+                } */
+                #EditImg>img{
+                 width: 90%;
+                 height: 90%;
+                 border-top-left-radius: 20px;
+                 border-top-right-radius: 20px;
+                 border-bottom-left-radius: 0;
+                 border-bottom-right-radius: 0;
+            
+                
+             }
+             .PhotoEdit{
+                 flex-direction: column;
+                 height: 95vh;   
+             }
+             
+             .PhotoEdit>.text>h1{
+                 position:absolute;
+                 top: 8%;
+                 left: 25%;
+                 font-size: 4rem;
+                 margin-left: 0;
+                 word-spacing: 1rem;
+                 user-select: none;
+                 color: rgba(0, 0, 0, 0.611);
+                 z-index: 2;
+               
+             }
+             .socialConnectSec{
+                 background-position: center;
+                 background-size: contain;
+             }
+             .social{
+                 width: 100%;
+             }
+             .social>h1{
+                 font-size: 2.5rem;
+             }
+             .socialLogo{
+                 gap: 100px;
+             }
+             .socialLogo>a>img{
+                 width: 15vw;
+             }
+             .socialLogo>a .value{
+                 font-size: 2rem;
+             }
+             .collab{
+                 display: flex;
+                 width: 50%;
+             }
+             .collab>a>button{
+                 width: 40vw;
+                 padding: .5rem;
+                 font-size: 1.1rem;
+             }
+             .collab>i{
+                 font-size: 1.5rem;
+             }
+             footer{
+                 width: 100%;
+                 height: 100%;
+                 gap: 20px;
+                 padding: 1rem .8rem;
+             }
+             .footerPrt{
+                 flex-wrap: wrap;
+                 justify-content: space-around;
+                 gap: 25px;
+             }
+             .contact{
+                 /* align-items: center; */
+                 gap: 10px;
+             }
+             .footerPrt>.contact>a{
+                 font-size: 1.1rem;
+             }
+             .shortcutSection{
+                 flex-wrap: wrap;
+                 align-items: center;
+                 gap: 20px;
+                 justify-content: center;
+             }
+             .footerPrt>.shortcutSection>a{
+                 /* transition: none; */
+                 font-size: 1.1rem
+             }
+             .shortcutSection>a:hover{
+                 color: rgb(0, 221, 255);
+                 margin-top: 0%;
+             
+             }
+             footer>p{
+                 font-size: .8rem;
+             }
+    
+    }
+@media(max-width:600px){
+    #MobileMenubar{
+        background-color: #1b1c1cd6;
+        height: 0vh;
+        filter: blur(5px);
+        width: 100vw;
+        position: fixed;
+        z-index: 200;
+        transition: all .2s ease-in-out;
+        top: 0;
+    }
+    .navbar{
+        width: 100%;
+        padding: .5rem 1rem;
+        position: fixed;
+        top: 0;
+        z-index: 500;
+      
+    }
+    .navbar>.logo>img{
+        width: 8vw;
+    }
+    .navprt2{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size: 1.3rem;
+    }
+    .menu{
+    
+        z-index: 500;
+        position: fixed;
+        display: none;
+    }
+
+    .menu>.ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        width: 100vw;
+        padding-top: 2rem;
+        /* display: none; */
+     transition: all 2s ease-in-out;
+        list-style-type: none;
+        opacity: 0;
+
+    
+    }
+    .menu>ul>li{
+        align-items: center;
+
+       
+       
+    }
+    .menu>ul>li>a{
+        color: whitesmoke;
+        font-size: 1.1rem;
+        text-decoration: none;
+       
+    }
+    .menu>ul>li>a:hover{
+        color: rgb(15, 136, 184);
+
+    }
+    .hero{
+        
+        width: 100%;
+        height: 95vh;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding: 1rem 0rem;
+        text-align: center;
+        align-items: center;
+        margin-top: 10%;
+        justify-content: center;
+
+    }
+    .heroryt>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width: 40vw;
+        height: 37vh;
+     }
+     .herolft{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+     .herolft>h1{
+         font-weight: 500;
+         font-size: 2.5rem;
+         margin-bottom: 0%;
+         margin-top: 0;
+     }
+     .introprt{
+         font-size: 2rem;
+         font-weight: 600;
+         color: rgba(16, 16, 16, 0.815);
+         
+     }
+     .hire>a button{
+         width: 50%;
+         
+     }
+     .skillSection>h1{
+         font-size: 3rem;
+         text-align: center;
+     }
+     .skillsMentions{
+         width: 100%;
+         flex-direction: column;
+       
+     }
+     .skillLft>p{
+         width: 50%;
+         margin: 0 auto;
+         margin-top: 2%;
+         padding: 1rem;
+         font-size: 1rem;
+     
+     }
+     .skillLft>p br{
+         display: none;
+     }
+     .skillLogo>span{
+         left: 0%;
+         font-size: .8rem;
+         padding: .2rem;
+       
+     }
+     .skillLft>h2{
+         font-size: 2.2rem;
+         text-align: center;
+ 
+     }
+     .skillRyt{
+         width: 90%;
+         flex-wrap: wrap;
+         margin-top: 15%;
+         align-items: center;
+         margin-left: -5%;
+         padding-left: 0;
+ 
+     }
+     .ellipse1{
+        display: none;
+     
+     }
+     .ellipse2{
+         position: absolute;
+         left: 0;
+         bottom: 0%;
+         filter:brightness(70%);
+         z-index: 1;
+         width: 50vw;
+     }
+     .skillRyt>img,.skillLogo>img{
+         width: 80%;
+         height: 8vh;
+         transition: all .2s ease-in-out;
+         border-radius: 50%;
+         z-index: 100;
+         align-items: center;
+         
+     
+         
+     }
+     .projects{
+         height: 100vh;
+         width: 100%;
+         padding-top: 1rem;
+         padding-left: .5rem;
+         padding-right: .5rem;
+         gap: 15px;
+         background: rgb(191, 224, 225);
+        margin: 0 auto;
+     }
+     .projects>h1{
+         text-align: center;
+         font-size: 2.1rem;
+     }
+ 
+     .projects>.text>h1{
+         display: none;
+     }
+     .phone>img{
+        display: none;
+        }
+        .videoEdit{
+            position: absolute;
+            top: 10%;
+             left: 10%;
+            z-index: 1;
+        
+        }
+        .videoEdit>video{
+     
+             width:80vw;
+            height: 80vh;
+            /* display: none; */
+            border-style: dotted;
+            border-color: #05675d;
+            box-shadow: 0px 0px 10px black;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        
+            
+            
+         }
+         .PhotoEdit>#EditImg{
+             background-color: #cd070728;
+             align-items: center;
+             display: flex;
+             justify-content: center;
+             height: 100%;
+             width: 60vw;
+             border-top-left-radius: 30px;
+             border-top-right-radius: 30px;
+             box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+             }
+        /* #EditImg{
+             background-color: #cd070728;
+             align-items: center;
+             display: flex;
+             justify-content: center;
+             height: 100%;
+             width: 100%;
+             border-top-left-radius: 30px;
+             border-top-right-radius: 30px;
+             box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
+             z-index: 8;
+             
+            } */
+            #EditImg>img{
+             width: 90%;
+             height: 90%;
+             border-top-left-radius: 20px;
+             border-top-right-radius: 20px;
+             border-bottom-left-radius: 0;
+             border-bottom-right-radius: 0;
+        
+            
+         }
+         .PhotoEdit{
+             flex-direction: column;
+             height: 95vh;   
+         }
+         
+         .PhotoEdit>.text>h1{
+             position:absolute;
+             top: 8%;
+             left: 18%;
+             font-size: 4rem;
+             margin-left: 0;
+             word-spacing: 1rem;
+             user-select: none;
+             color: rgba(0, 0, 0, 0.611);
+             z-index: 2;
+           
+         }
+         .socialConnectSec{
+             background-position: center;
+             background-size: contain;
+         }
+         .social{
+             width: 100%;
+         }
+         .social>h1{
+             font-size: 2rem;
+         }
+         .socialLogo{
+             gap: 100px;
+         }
+         .socialLogo>a>img{
+             width: 15vw;
+         }
+         .socialLogo>a .value{
+             font-size: 2rem;
+         }
+         .collab{
+             display: flex;
+             width: 50%;
+         }
+         .collab>a>button{
+             width: 35vw;
+             padding: .5rem;
+             font-size: 1rem;
+         }
+         .collab>i{
+             font-size: 1.5rem;
+         }
+         footer{
+             width: 100%;
+             height: 100%;
+             gap: 20px;
+             padding: 1rem .8rem;
+         }
+         .footerPrt{
+             flex-wrap: wrap;
+             justify-content: space-around;
+             gap: 25px;
+         }
+         .contact{
+             align-items: center;
+             gap: 10px;
+         }
+         .footerPrt>.contact>a{
+             font-size: 1.1rem;
+         }
+         .shortcutSection{
+             flex-wrap: wrap;
+             align-items: center;
+             gap: 20px;
+             justify-content: center;
+         }
+         .footerPrt>.shortcutSection>a{
+             /* transition: none; */
+             font-size: 1.1rem
+         }
+         .shortcutSection>a:hover{
+             color: rgb(0, 221, 255);
+             margin-top: 0%;
+         
+         }
+         footer>p{
+             font-size: .8rem;
+         }
+
+}
+    
+
 @media(max-width:430px){
     
     #MobileMenubar{
@@ -848,7 +1836,7 @@ footer>p{
         }
         .PhotoEdit{
             flex-direction: column;
-            height: 100vh;   
+            height: 95vh;   
         }
         
         .PhotoEdit>.text>h1{
@@ -1015,7 +2003,7 @@ footer>p{
        
     }
     .PhotoEdit{
-        height: 100vh;
+        height: 95vh;
     }
     .PhotoEdit>.text>h1{
         position:absolute;
@@ -1168,6 +2156,9 @@ footer>p{
            width:100vw;
           
        }
+       .PhotoEdit{
+        height: 90vh;
+    }
        #EditImg{
         background-color: #cd070728;
         align-items: center;
