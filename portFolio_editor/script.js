@@ -32,7 +32,7 @@ function animateValue(obj, start, end, duration) {
 
 
   var img =document.getElementById('EditImg');
-  var sliders =['images/img1.jpg','images/img2.jpg','images/img4.jpg','images/img5.jpg'];
+  var sliders =['images/HeroSec.jpg','images/img1.jpg','images/img2.jpg','images/img4.jpg','images/img5.jpg','images/img3.jpg','images/img6.jpg'];
   var Start=0;
 
   function slider(){
