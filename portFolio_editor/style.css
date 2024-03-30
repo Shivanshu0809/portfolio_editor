@@ -1030,6 +1030,8 @@ footer>p{
          }
          .hire>a button{
              width: 50%;
+             font-size: 1.1rem;
+             padding: .4rem;
              
          }
          .skillSection>h1{
@@ -1932,7 +1934,7 @@ footer>p{
         font-size: 1.1rem;
     }
     .hire{
-        width: 80vw;
+        width: 100%;
     }
     .skillSection>h1{
         font-size: 2rem;
