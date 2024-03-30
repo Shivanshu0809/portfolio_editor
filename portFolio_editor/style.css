@@ -114,6 +114,9 @@
     }
 
 }
+.herorytMob{
+    display: none;
+}
 .herolft{
     /* align-items: center; */
     display: flex;
@@ -616,7 +619,7 @@ footer>p{
     } */
     .navbar{
         width: 100%;
-        padding: .5rem 1rem;
+        padding: .8rem 1rem;
         position: fixed;
         top: 0;
         z-index: 500;
@@ -627,6 +630,9 @@ footer>p{
     }
     .navprt2{
         display: block;
+    }
+    .navprt2>a{
+        font-size: 1.3rem;
     }
     .hamburger{
         display: none;
@@ -665,16 +671,29 @@ footer>p{
         padding: 1rem 0rem;
         text-align: center;
         align-items: center;
-        margin-top: 7%;
+        margin-top: 5%;
         justify-content: center;
+        gap: 15px;
 
     }
-    .heroryt>img{
+    /* .heroryt>img{
         border-radius: 50%;
         border:1px solid rgb(0, 0, 0);
         width: 40vw;
         height: 45vh;
+     } */
+     .heroryt{
+        display: none;
      }
+     .herorytMob{
+        display: block;
+    }
+    .herorytMob>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width:420px;
+        height: 420px;
+    }
      .herolft{
          display: flex;
          flex-direction: column;
@@ -686,15 +705,19 @@ footer>p{
          margin-bottom: 0%;
          margin-top: 0;
      }
+    
      .introprt{
-         font-size: 2rem;
+         font-size: 3rem;
          font-weight: 600;
          color: rgba(16, 16, 16, 0.815);
          
      }
+     .introprt>p{
+        font-size: 1.5rem;
+     }
      .hire>a button{
          width: 50%;
-         font-size: 1.5rem;
+         font-size: 1.6rem;
          
      }
      .skillSection>h1{
@@ -807,8 +830,8 @@ footer>p{
              align-items: center;
              display: flex;
              justify-content: center;
-             height: 100%;
-             width: 45vw;
+             height:650px;
+             width:400px;
              border-top-left-radius: 30px;
              border-top-right-radius: 30px;
              box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
@@ -1003,14 +1026,15 @@ footer>p{
             align-items: center;
             margin-top: 7%;
             justify-content: center;
+            gap: 0px;
     
         }
-        .heroryt>img{
+        /* .heroryt>img{
             border-radius: 50%;
             border:1px solid rgb(0, 0, 0);
             width: 40vw;
             height: 45vh;
-         }
+         } */
          .herolft{
              display: flex;
              flex-direction: column;
@@ -1018,15 +1042,24 @@ footer>p{
          }
          .herolft>h1{
              font-weight: 500;
-             font-size: 2.5rem;
+             font-size: 2.2rem;
              margin-bottom: 0%;
              margin-top: 0;
          }
+         .herorytMob>img{
+            border-radius: 50%;
+            border:1px solid rgb(0, 0, 0);
+            width:320px;
+            height: 320px;
+        }
          .introprt{
              font-size: 2rem;
              font-weight: 600;
              color: rgba(16, 16, 16, 0.815);
              
+         }
+         .introprt>p{
+            font-size: 1.3rem;
          }
          .hire>a button{
              width: 50%;
@@ -1034,6 +1067,7 @@ footer>p{
              padding: .4rem;
              
          }
+    
          .skillSection>h1{
              font-size: 3rem;
              text-align: center;
@@ -1139,13 +1173,14 @@ footer>p{
                 
                 
              }
+           
              .PhotoEdit>#EditImg{
                  background-color: #cd070728;
                  align-items: center;
                  display: flex;
                  justify-content: center;
-                 height: 100%;
-                 width: 50vw;
+                 height:550px;
+                 width:300px;
                  border-top-left-radius: 30px;
                  border-top-right-radius: 30px;
                  box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
@@ -1338,12 +1373,18 @@ footer>p{
         justify-content: center;
 
     }
-    .heroryt>img{
+    /* .heroryt>img{
         border-radius: 50%;
         border:1px solid rgb(0, 0, 0);
         width: 40vw;
         height: 37vh;
-     }
+     } */
+     .herorytMob>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width:250px;
+        height: 280px;
+    }
      .herolft{
          display: flex;
          flex-direction: column;
@@ -1475,8 +1516,8 @@ footer>p{
              align-items: center;
              display: flex;
              justify-content: center;
-             height: 100%;
-             width: 60vw;
+             height:450px;
+             width:300px;
              border-top-left-radius: 30px;
              border-top-right-radius: 30px;
              box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
@@ -1665,19 +1706,26 @@ footer>p{
         height: 91vh;
         flex-direction: column-reverse;
         margin: 0 auto;
-        padding: 1rem 0rem;
+        padding: .3rem 0rem;
         text-align: center;
         align-items: center;
         margin-top: 13%;
         justify-content: center;
+        gap: 20px;
 
     }
    
-    .heroryt>img{
+    /* .heroryt>img{
        border-radius: 50%;
        border:1px solid rgb(0, 0, 0);
        width: 55vw;
        height: 37vh;
+    } */
+    .herorytMob>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width:230px;
+        height: 260px;
     }
     .herolft{
         display: flex;
@@ -1695,6 +1743,9 @@ footer>p{
         color: rgba(16, 16, 16, 0.815);
         
     }
+    .introprt>p{
+        font-size: 1.2rem;
+     }
     .hire>a button{
         width: 50%;
         
@@ -1807,8 +1858,8 @@ footer>p{
             align-items: center;
             display: flex;
             justify-content: center;
-            height: 100%;
-            width: 80vw;
+            height:450px;
+            width:300px;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
@@ -1926,6 +1977,12 @@ footer>p{
 
 
 @media(max-width:380px){
+    .herorytMob>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width:200px;
+        height: 240px;
+    }
     .herolft>h1{
         font-size: 2.2rem;
         
@@ -2024,8 +2081,8 @@ footer>p{
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 80vw;
+    height:400px;
+     width:250px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
@@ -2073,7 +2130,7 @@ footer>p{
 }
 @media(max-width:331px){
    
-    .heroryt>img{
+    /* .heroryt>img{
         border-radius: 50%;
         border:1px solid rgb(0, 0, 0);
         width: 58vw;
@@ -2081,7 +2138,13 @@ footer>p{
         /* margin-top: 25%; */
        
        
-     }
+     /* } */
+     .herorytMob>img{
+        border-radius: 50%;
+        border:1px solid rgb(0, 0, 0);
+        width:200px;
+        height: 210px;
+    }
      .herolft>h1{
         font-size: 2rem;
         
@@ -2161,13 +2224,13 @@ footer>p{
        .PhotoEdit{
         height: 90vh;
     }
-       #EditImg{
+      .PhotoEdit>#EditImg{
         background-color: #cd070728;
         align-items: center;
         display: flex;
         justify-content: center;
-        height: 100%;
-        width: 80vw;
+        height:350px;
+        width:250px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         box-shadow: 0px 0px 10px 5px rgba(97, 96, 96, 0.595);
